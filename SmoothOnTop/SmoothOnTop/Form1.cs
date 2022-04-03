@@ -67,7 +67,7 @@ namespace SmoothOnTop
 			return item;
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void buttonDoIt_Click(object sender, EventArgs e)
 		{
 			var item = this.GetSelectedItem();
 			if (item != null)
@@ -76,12 +76,21 @@ namespace SmoothOnTop
 			}
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void buttonUndoIt_Click(object sender, EventArgs e)
 		{
 			var item = this.GetSelectedItem();
 			if (item != null)
 			{
 				this.MakeAlwaysOnTop(item.Hwnd, false);
+			}
+		}
+
+		private void buttonFlashSelected_Click(object sender, EventArgs e)
+		{
+			var item = this.GetSelectedItem();
+			if (item != null)
+			{
+				NativeMethods.FlashWindow(item.Hwnd, true);
 			}
 		}
 	}

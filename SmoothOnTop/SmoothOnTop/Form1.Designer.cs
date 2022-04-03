@@ -30,8 +30,9 @@
 		{
 			this.buttonEnumerate = new System.Windows.Forms.Button();
 			this.listBoxWindows = new System.Windows.Forms.ListBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.buttonDoIt = new System.Windows.Forms.Button();
+			this.buttonUndoIt = new System.Windows.Forms.Button();
+			this.buttonFlashSelected = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// buttonEnumerate
@@ -55,33 +56,44 @@
 			this.listBoxWindows.Size = new System.Drawing.Size(598, 251);
 			this.listBoxWindows.TabIndex = 1;
 			// 
-			// button1
+			// buttonDoIt
 			// 
-			this.button1.Location = new System.Drawing.Point(93, 12);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Do it";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.buttonDoIt.Location = new System.Drawing.Point(93, 12);
+			this.buttonDoIt.Name = "buttonDoIt";
+			this.buttonDoIt.Size = new System.Drawing.Size(75, 23);
+			this.buttonDoIt.TabIndex = 2;
+			this.buttonDoIt.Text = "Do it";
+			this.buttonDoIt.UseVisualStyleBackColor = true;
+			this.buttonDoIt.Click += new System.EventHandler(this.buttonDoIt_Click);
 			// 
-			// button2
+			// buttonUndoIt
 			// 
-			this.button2.Location = new System.Drawing.Point(174, 12);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 3;
-			this.button2.Text = "Undo it";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.buttonUndoIt.Location = new System.Drawing.Point(174, 12);
+			this.buttonUndoIt.Name = "buttonUndoIt";
+			this.buttonUndoIt.Size = new System.Drawing.Size(75, 23);
+			this.buttonUndoIt.TabIndex = 3;
+			this.buttonUndoIt.Text = "Undo it";
+			this.buttonUndoIt.UseVisualStyleBackColor = true;
+			this.buttonUndoIt.Click += new System.EventHandler(this.buttonUndoIt_Click);
+			// 
+			// buttonFlashSelected
+			// 
+			this.buttonFlashSelected.Location = new System.Drawing.Point(255, 12);
+			this.buttonFlashSelected.Name = "buttonFlashSelected";
+			this.buttonFlashSelected.Size = new System.Drawing.Size(89, 23);
+			this.buttonFlashSelected.TabIndex = 4;
+			this.buttonFlashSelected.Text = "Flash Selected";
+			this.buttonFlashSelected.UseVisualStyleBackColor = true;
+			this.buttonFlashSelected.Click += new System.EventHandler(this.buttonFlashSelected_Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(622, 318);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.buttonFlashSelected);
+			this.Controls.Add(this.buttonUndoIt);
+			this.Controls.Add(this.buttonDoIt);
 			this.Controls.Add(this.listBoxWindows);
 			this.Controls.Add(this.buttonEnumerate);
 			this.Name = "Form1";
@@ -94,8 +106,9 @@
 
 		private System.Windows.Forms.Button buttonEnumerate;
 		private System.Windows.Forms.ListBox listBoxWindows;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button buttonDoIt;
+		private System.Windows.Forms.Button buttonUndoIt;
+		private System.Windows.Forms.Button buttonFlashSelected;
 	}
 }
 

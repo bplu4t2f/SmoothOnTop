@@ -20,6 +20,8 @@ namespace SmoothOnTop
 		public static extern bool IsWindowVisible(IntPtr hWnd); 
 		[DllImport("user32.dll")]
 		public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, SetWindowPosFlags uFlags);
+		[DllImport("user32.dll")]
+		public static extern bool FlashWindow(IntPtr hWnd, bool invert);
 	}
 
 	[Flags()]
